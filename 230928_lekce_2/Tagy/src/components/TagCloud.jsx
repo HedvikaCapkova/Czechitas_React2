@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 export const TagCloud = () => {
-  const tagArray = [
+  const tagArr = [
     'Workout Gear',
     'Digital Art',
     'Replacement',
@@ -18,11 +18,11 @@ export const TagCloud = () => {
     'Goal',
     'Black',
     'Activity',
-    'Dolor',
   ];
 
+  const [tags, setTags] = useState(tagArr);
   const [newTag, setNewTag] = useState('');
-  const [tags, setTags] = useState(tagArray);
+  const inputValue = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,22 +30,36 @@ export const TagCloud = () => {
     setNewTag('');
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    setTags(tags.slice(1));
+    console.log(tags.length);
+    // const newArr = [...tags];
+    // newArr.shift();
+    // setTags(newArr);
+  };
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <label>
-          New Tag
-          <input
-            type="text"
-            value={newTag}
-            onChange={(e) => setNewTag(e.target.value)}
-          />
-        </label>
+        <input
+          placeholder="Add new tag..."
+          type="text"
+          value={newTag}
+          ref={inputValue}
+          onChange={() => setNewTag(inputValue?.current.value)}
+        />
       </form>
 
+      <button
+        disabled={tags.length === 0}
+        onClick={handleClick}>
+        Remove first tag
+      </button>
+
       <div>
-        {tags.map((tag, index) => (
-          <div key={index}>{tag}</div>
+        {tags.map((tag) => (
+          <div key={tag}>{tag}</div>
         ))}
       </div>
     </div>
