@@ -1,4 +1,4 @@
-import Topping from "../Topping";
+import Topping from '../Topping';
 import './style.css';
 
 const ToppingsSelect = ({ toppings }) => {
@@ -9,7 +9,10 @@ const ToppingsSelect = ({ toppings }) => {
 
       <div className="toppings">
         {toppings.map((topping) => (
-          <Topping topping={topping} key={topping.name} />
+          <Topping
+            topping={topping}
+            key={topping.name}
+          />
         ))}
       </div>
     </>

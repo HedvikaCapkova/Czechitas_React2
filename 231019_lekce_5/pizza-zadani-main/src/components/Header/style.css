@@ -1,0 +1,11 @@
+.topping {
+  width: fit-content;
+  margin: 0.5rem;
+  height: 2rem;
+  background-color: #e9e9af;
+  border-radius: 1rem;
+}
+
+.topping__content {
+  padding: 0 1rem 0 0.5rem;
+}
