@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cvrlikání</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<aside class="sidebar">
+			<nav class="menu">
+				<div class="menu__item menu__logo">
+					<a href="#" class="menu__link">
+						<img class="menu__icon" src="assets/icons/kiwi.svg">
+					</a>
+				</div>
+				<div class="menu__item">
+					<a href="#" class="menu__link">
+						<img class="menu__icon" src="assets/icons/house.svg" alt="Domů">
+						<span class="menu__text">Domů</span>
+					</a>
+				</div>
+				<div class="menu__item">
+					<a href="#" class="menu__link">
+						<img class="menu__icon" src="assets/icons/bookmark.svg" alt="Záložky">
+						<span class="menu__text">Záložky</span>
+					</a>
+				</div>
+				<div class="menu__item">
+					<a href="#" class="menu__link">
+						<img class="menu__icon" src="assets/icons/heart.svg" alt="Lajky">
+						<span class="menu__text">Lajky</span>
+					</a>
+				</div>
+			</nav>
+
+		</aside>
+
+
+		<main class="main">
+			<h1 class="page-title">Cvrlikání</h1>
+
+			<div class="post">
+				<form class="post__form">
+					<textarea name="post-message" id="post-message" rows="4" class="post__message" placeholder="Řekni, co se děje?"></textarea>
+				</form>
+				<div class="post__actions">
+					<button class="button">Zacvrlikej to</button>
+				</div>
+			</div>
+
+
+			<div class="timeline">
+
+				<article class="message">
+					<div class="message__avatar">
+						<img src="assets/avatars/woman1.jpg" alt="">
+					</div>
+					<div class="message__content">
+						<header class="message__header">
+							<span class="message__name">Alena Nováková</span>
+							<span class="message__handle">@novalena</span>
+							<span class="message__time">2h</span>
+						</header>
+						<div class="message__text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus illum temporibus sit nemo, impedit maxime ipsum numquam laboriosam accusamus eius.
+						</div>
+						<footer class="message__footer">
+							<button class="icon-button icon-button--red">
+								<span class="icon-button__icon"><img src="assets/icons/heart.svg" alt="Miluju to"></span>
+								123
+							</button>
+							<button class="icon-button icon-button--blue">
+								<span class="icon-button__icon"><img src="assets/icons/bookmark.svg" alt="Uložit do záložek"></span>
+								Přidat do záložek
+							</button>
+							<button class="icon-button icon-button--red">
+								<span class="icon-button__icon"><img src="assets/icons/trash.svg" alt="Smazat zprávu"></span>
+								Smazat zprávu
+							</button>
+						</footer>
+					</div>
+				</article>
+
+				<article class="message">
+					<div class="message__avatar">
+						<img src="assets/avatars/woman2.jpg" alt="">
+					</div>
+					<div class="message__content">
+						<header class="message__header">
+							<span class="message__name">Jana Novotná</span>
+							<span class="message__handle">@janicka</span>
+							<span class="message__time">1d</span>
+						</header>
+						<div class="message__text">
+							Tenhle příspěvek je uložený v záložkách. Temporibus ad nihil molestiae eaque officiis ipsum omnis incidunt voluptas nemo esse saepe cum repellendus.
+						</div>
+						<footer class="message__footer">
+							<button class="icon-button icon-button--red">
+								<span class="icon-button__icon"><img src="assets/icons/heart.svg" alt="Miluju to"></span>
+								123
+							</button>
+							<button class="icon-button icon-button--blue">
+								<span class="icon-button__icon"><img src="assets/icons/bookmark-active.svg" alt="Uložit do záložek"></span>
+								Přidat do záložek
+							</button>
+							<button class="icon-button icon-button--red">
+								<span class="icon-button__icon"><img src="assets/icons/trash.svg" alt="Smazat zprávu"></span>
+								Smazat zprávu
+							</button>
+						</footer>
+					</div>
+				</article>
+
+				<article class="message">
+					<div class="message__avatar">
+						<img src="assets/avatars/woman3.jpg" alt="">
+					</div>
+					<div class="message__content">
+						<header class="message__header">
+							<span class="message__name">Lenka Skočdopole</span>
+							<span class="message__handle">@fieldhop</span>
+							<span class="message__time">1d</span>
+						</header>
+						<div class="message__text">
+							Voluptas dolorem quis beatae doloribus nobis eligendi aperiam. Voluptates, deleniti eaque dolore, vitae consequatur, aspernatur reiciendis odio necessitatibus at natus labore.
+						</div>
+						<footer class="message__footer">
+							<button class="icon-button icon-button--red">
+								<span class="icon-button__icon"><img src="assets/icons/heart.svg" alt="Miluju to"></span>
+								123
+							</button>
+							<button class="icon-button icon-button--blue">
+								<span class="icon-button__icon"><img src="assets/icons/bookmark.svg" alt="Uložit do záložek"></span>
+								Přidat do záložek
+							</button>
+							<button class="icon-button icon-button--red">
+								<span class="icon-button__icon"><img src="assets/icons/trash.svg" alt="Smazat zprávu"></span>
+								Smazat zprávu
+							</button>
+						</footer>
+					</div>
+				</article>
+
+			</div><!-- .timeline -->
+
+		</main>
+
+	</div><!-- .container-->
+
+</body>
+</html>
